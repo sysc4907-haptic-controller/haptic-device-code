@@ -49,10 +49,12 @@ void setup()
 
   pinMode(RIGHT_MOTOR_ENABLE, OUTPUT);
   pinMode(RIGHT_MOTOR_DIRECTION, OUTPUT);
+  analogWriteFrequency(RIGHT_MOTOR_ENABLE, 20000);
   analogWrite(RIGHT_MOTOR_ENABLE, 0);
 
   pinMode(LEFT_MOTOR_ENABLE, OUTPUT);
   pinMode(LEFT_MOTOR_DIRECTION, OUTPUT);
+  analogWriteFrequency(LEFT_MOTOR_ENABLE, 20000);
   analogWrite(LEFT_MOTOR_ENABLE, 0);
 
   pinMode(RIGHT_BRAKE_ENABLE, OUTPUT);
